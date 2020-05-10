@@ -3,6 +3,7 @@ import './App.css';
 
   function useForm(init){
     const [value,setValue] = useState(init)
+    
     function handleChange(e){
         setValue(e.target.value)
     }
@@ -47,7 +48,7 @@ function App() {
     const userEmail = useForm('')
     const userPassword = useForm('')
     const userPassword2 = useForm('')
-    console.log(" effect");
+    const statusInfo = useForm('')
   return (
    <Container>
      <h1>Registration Form</h1>
