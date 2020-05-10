@@ -35,6 +35,7 @@ function App() {
           }
         )
         res = await res.json()
+        console.log(res);
         if(res.status=='success'){
           alert(res.message)
         }else if(res.status=='fail'){
@@ -50,8 +51,8 @@ function App() {
   return (
    <Container>
      <h1>Registration Form</h1>
-     <input type="email" 
-     name="userEmail"
+     <input type="Email" 
+     name="email"
      value={userEmail.value}
      onChange={userEmail.onChange}
      placeholder="Enter your email"/>
